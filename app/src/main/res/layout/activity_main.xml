@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uninorte.q1williamllanos.MainActivity">
+
+    <EditText
+        android:id="@+id/etNota1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/etNota2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        app:layout_constraintLeft_toLeftOf="@+id/etNota1"
+        app:layout_constraintRight_toRightOf="@+id/etNota1"
+        app:layout_constraintTop_toBottomOf="@+id/etNota1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/etNota3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        app:layout_constraintLeft_toLeftOf="@+id/etNota2"
+        app:layout_constraintRight_toRightOf="@+id/etNota2"
+        app:layout_constraintTop_toBottomOf="@+id/etNota2"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/etNota4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        app:layout_constraintLeft_toLeftOf="@+id/etNota3"
+        app:layout_constraintRight_toRightOf="@+id/etNota3"
+        app:layout_constraintTop_toBottomOf="@+id/etNota3"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/bCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCalc"
+        android:text="Calcular"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/etNota4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/etNota4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Nota 4"
+        app:layout_constraintRight_toLeftOf="@+id/etNota4"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etNota4"
+        tools:layout_constraintBaseline_creator="1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Nota 3"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toLeftOf="@+id/etNota3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etNota3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Nota 1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toLeftOf="@+id/etNota1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toTopOf="@+id/etNota1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Nota 2"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toLeftOf="@+id/etNota2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etNota2" />
+
+    <TextView
+        android:id="@+id/tvLabelSalida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nota Definitiva"
+        android:textAlignment="center"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="91dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bCalc" />
+
+    <TextView
+        android:id="@+id/tvSalida"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="23dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelSalida"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
